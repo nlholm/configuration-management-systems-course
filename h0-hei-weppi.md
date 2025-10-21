@@ -1,6 +1,6 @@
 # h0 - Hei weppi
 
-Ensimmäinen tehtäväni Palvelinten hallinta-kurssilla syksyllä 2025 oli kirjoittaa _hello world_ MarkDownilla. Tai pikemminkin, _hei weppi_!
+Ensimmäinen tehtäväni Palvelinten hallinta -kurssilla syksyllä 2025 oli kirjoittaa _hello world_ MarkDownilla. Tai pikemminkin, _hei weppi_!
 
 ## Lähteet
 

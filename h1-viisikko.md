@@ -46,7 +46,7 @@ $ sudo salt-call --local -l info state.single
 - ... pkg.removed ”ohjelma” – poistaa ohjelman
 - ... file.managed /”polku”/”tiedosto” – muokkaa tiedostoa (tai luo sen, jos sitä ei ole)
 - ... file.absent /”polku”/”tiedosto” – poistaa tiedoston
-- ... service.running ”demoni” enable=True – käynnistää demonin (mutta ei asenna)
+- ... service.running ”demoni” enable=True – käynnistää demonin (mutta ei asenna sitä)
 - ... service.dead ”demoni” enable=False – sulkee demonin
 - ... user.present ”user” – tarkistaa onko käyttäjä olemassa (jos ei, lisää käyttäjän)
 - ... user.absent ”user” – poistaa käyttäjän
@@ -74,7 +74,7 @@ _Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi)._
 
 Asensin Saltin Linuxille [Karvisen ohjeella](https://terokarvinen.com/install-salt-on-debian-13-trixie/).
 
- <img width="665" height="314" alt="image" src="https://github.com/user-attachments/assets/5be6d41f-1e3c-4b45-a73f-adc96d233a36" />
+<img width="665" height="314" alt="image" src="https://github.com/user-attachments/assets/5be6d41f-1e3c-4b45-a73f-adc96d233a36" />
 
 <img width="470" height="73" alt="image" src="https://github.com/user-attachments/assets/4e19e0ff-6601-4c20-a3f1-3627ff438c0b" />
 

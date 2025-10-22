@@ -112,11 +112,11 @@ File.managed ja file.absent-tilafunktioilla luodaan (tai muokataan) sekä poiste
 
 Uusia ja muuttuneita tiloja on 1.
 
-`sudo salt-call --local -l info state.single file.managed /tmp/testi contents=”testitesti”` luo tiedostoon sisältöä. 
+`sudo salt-call --local -l info state.single file.managed /tmp/testi contents=”testitesti”` luo tiedostoon sisältöä.
 
 <img width="665" height="391" alt="image" src="https://github.com/user-attachments/assets/fb310b70-5d12-451a-a1cb-586bdfacb316" />
 
-<img width="342" height="106" alt="image" src="https://github.com/user-attachments/assets/9407c052-2d3c-4a8d-9ab0-82ae799cb805" />
+<img width="342" height="106" alt="image" src="https://github.com/user-attachments/assets/055ce536-7a21-40eb-b6e4-2ed860b42834" />
 
 `sudo salt-call --local -l info state.single file.absent /tmp/testi`poistaa tiedoston.
 

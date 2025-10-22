@@ -158,7 +158,7 @@ Pohdin, olisiko salasana mahdollista asettaa käyttäjän luomisen yhteydessä. 
 
 Cmd.run-tilafunktiolla ajetaan komentoja.
 
-`sudo salt-call --local -l info state.single cmd.run 'touch /tmp/testi' creates="/tmp/testi"`: “kosketetaan” tiedostoa ‘testi’ komennolla ’touch’. Cmd-tilafunktio varmistaa, että tiedosto on olemassa, ja jos ei ole, se luodaan. Touch muuttaa tiedoston aikaleimaa muuttamatta muuten itse tiedostoa. [Karvisen]( https://terokarvinen.com/2021/salt-run-command-locally/) mukaan on usein tarkoituksenmukaisempaa käyttää funktiota file, service tai user kuin cmd.
+`sudo salt-call --local -l info state.single cmd.run 'touch /tmp/testi' creates="/tmp/testi"`: “kosketetaan” tiedostoa ‘testi’ komennolla ’touch’. Cmd-tilafunktio varmistaa, että tiedosto on olemassa, ja jos ei ole, se luodaan. Touch muuttaa tiedoston aikaleimaa muuttamatta muuten itse tiedostoa. [Karvisen]( https://terokarvinen.com/2021/salt-run-command-locally/) mukaan on usein tarkoituksenmukaisempaa käyttää funktiota file, service tai user kuin cmd; cmd ei ole luonnostaan idempotentti, se on muotoiltava sellaiseksi ja ajettava vain silloin kuin muutoksille on tarvetta.
 
  <img width="665" height="353" alt="image" src="https://github.com/user-attachments/assets/a847a204-4910-443b-bd01-06defd76e0ee" />
 

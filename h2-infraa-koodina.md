@@ -182,7 +182,7 @@ _Tee top-file, niin että kaikki omat tilasi ajetaan kerralla komennolla 'sudo s
 
 Loin /srv/salt/-kansion juureen top filen nimeltä top.sls. Tiedoston sisältö:
 
-``
+```
 base:
   ’*’:
     - several_states

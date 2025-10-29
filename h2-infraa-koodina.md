@@ -66,6 +66,7 @@ Perussäännöt
 Perusrakenteet
 
 1) Skalaarit (scalar, alkioarvo/perusarvo)
+
 Arvo voi olla numero, merkkijono tai boolean.
 
 ```
@@ -75,6 +76,7 @@ grains: bread
 ```
 
 2) Listat
+   
 Arvona lista, jokainen alkio omalle rivilleen.
 
 ```
@@ -87,6 +89,7 @@ fruits:
 ```
 
 3) Sanakirjat (dictionary)
+
 Sisältää avain: arvo -pareja ja listoja.
 
 ```

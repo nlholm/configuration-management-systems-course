@@ -28,7 +28,7 @@ Käytössäni on Windows 11 Home -käyttöjärjestelmällä varustettu jokusen v
  
 __Karvinen 2025: [Install Salt on Debian 13 Trixie]( https://terokarvinen.com/install-salt-on-debian-13-trixie/)__
 
-Salt on konfiguraationhallintatyökalu – infraa koodina. Jotta se voidaan asentaa Linuxiin, täytyy luoda apt-paketinhallintatyökalulle uusi repositorio (varasto). Repo koostuu kahdesta tiedostosta, jotka ladataan Salt Projectilta: PGP -julkinen avain sekä sources.list. Jälkimmäisen tiedoston sisältönä on URL-osoitteita joissa sijaitsevat projektin binäärikoodit. Kun repo on luotu, voidaan asentaa Salt (salt-minion, salt-master).
+Salt on konfiguraationhallintatyökalu – infraa koodina. Jotta se voidaan asentaa Linuxiin, täytyy luoda apt get-paketinhallintatyökalulle uusi repositorio (varasto). Repo koostuu kahdesta tiedostosta, jotka ladataan Salt Projectilta: PGP-julkinen avain sekä sources.list. Jälkimmäisen tiedoston sisältönä on URL-osoitteita joissa sijaitsevat projektin binäärikoodit. Kun repo on luotu, voidaan asentaa Salt (salt-minion, salt-master).
 
 `$ sudo apt-get update`
 

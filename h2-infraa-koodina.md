@@ -69,7 +69,7 @@ Perusrakenteet
 
 Arvo voi olla numero, merkkijono tai boolean.
 
-```
+```yaml
 vegetables: peas
 fruit: apples
 grains: bread
@@ -79,7 +79,7 @@ grains: bread
    
 Arvona lista, jokainen alkio omalle rivilleen.
 
-```
+```yaml
 vegetables:
   - peas
   - carrots
@@ -92,7 +92,7 @@ fruits:
 
 Sisältää avain: arvo -pareja ja listoja.
 
-```
+``` yaml
 dinner:
   appetizer: shrimp cocktail
   drink: sparkling water

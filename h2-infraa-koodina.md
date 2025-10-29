@@ -283,7 +283,7 @@ Kirjoitin tiedoston nimen name-kohtaan.
 
 <img width="665" height="180" alt="image" src="https://github.com/user-attachments/assets/e7263dba-951e-4e09-8c9f-a446473f1610" />
 
-Nyt toimi.
+Nyt toimi, mutta huomiona, että luoduksi tuli nimenomaan name-kohdassa määritetty 'test4', ei creates-kohdassa määritetty 'testfile4'.
 
 ## d) Monta tilaa
 

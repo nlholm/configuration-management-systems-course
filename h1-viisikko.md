@@ -2,7 +2,7 @@
 
 [Palvelinten hallinta 2025 loppusyksy](https://terokarvinen.com/palvelinten-hallinta/) -kurssin ensimmäisessä tehtävässä tutustuin keskitetyn hallinnan periaatteisiin: __idempotenssi, infrastruktuuri koodina, yksi totuus__. Asensin uuden virtuaali-Linuxin VirtualBoxiin ja siihen ohjelmiston konfiguraationhallintatyökalu __Saltin__. Harjoittelin Saltin käyttöä paikallisesti. Kertasin myös komentorivityöskentelyä Linuxissa sekä lueskelin infrastruktuurista koodina.
 
-Tein tehtävää tiistaina 21.10 klo 12-16 sekä keskiviikkona 22.10 klo 13.15-19.
+Tein tehtävää tiistaina 21.10.2025 klo 12-16 sekä keskiviikkona 22.10.2025 klo 13.15-19.
 
 ## Laitteisto
 

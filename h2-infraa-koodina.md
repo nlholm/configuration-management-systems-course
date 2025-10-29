@@ -2,7 +2,7 @@
 
 [Palvelinten hallinta 2025 loppusyksy](https://terokarvinen.com/palvelinten-hallinta/) -kurssin toisessa tehtävässä harjoittelin Saltin käyttöä luomalla infraa koodina. Kun asetukset tehdään työasemille ja palvelimille koodaamalla, on mahdollista hallita lukuisia koneita yhtä aikaa yksinkertaisilla, tekstitiedostoihin kirjoitettavilla tilafunktioilla.
 
-Tein tehtävän keskiviikkona 29.10.2025 klo 14.00-20.00.
+Tein tehtävän keskiviikkona 29.10.2025 klo 14.00-20.30.
 
 ## Laitteisto
 

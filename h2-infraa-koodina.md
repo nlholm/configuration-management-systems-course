@@ -216,34 +216,38 @@ Loin yleisimmille tilafunktioille omat moduulit /srv/salt/-hakemistoon, ja kirjo
 
 hellopkg
 
+```
 micro:
-
   pkg.installed
+```
 
 hellofile
 
+```
 /tmp/testfile1:
-
     file.managed
+```
 
 helloservice
 
+```
 apache2:
-
   service.running
+```
 
 helllouser
 
+```
 testuser1:
-
   user.present
+```
 
 hellocmd
 
 ```
 touch_tmp_test:
   cmd.run:  
-    - name: touch /tmp/test2    
+    - name: touch /tmp/testfile2    
     - creates: /tmp/testfile2
 ```
 
@@ -289,12 +293,13 @@ Loin kansioon /srv/salt/ moduulin several_states ja sinne init.sls-tiedoston. Ti
 
 pacakges_ufw_installed:
 
-``
+```
 pkg.installed  
     - name: ufw
 ```
 
 users_testuser3:
+
 ```
 user.present:  
     - name: testuser3

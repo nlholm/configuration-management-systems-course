@@ -68,7 +68,7 @@ _Asenna Debian 13 Trixie virtuaalikoneeseen._
 
 Asensin Debian 13 Trixien VirtualBoxiin Karvisen [ohjeilla]( https://terokarvinen.com/2021/install-debian-on-virtualbox/). Jouduin tekemään asennuksen kahteen kertaan: VirtualBoxissa oli muistiin liittyvä ongelma, joka johti uuden koneen kaatumiseen toistuvasti käynnistettäessä. Ongelma ratkesi poistamalla VirtualBox kokonaan ja lataamalla sen uusin versio puhtaalta pöydältä.
 
-## b) Salt (salt-minion) Linuxille
+## b) Salt Linuxille
 
 _Asenna Salt (salt-minion) Linuxille (uuteen virtuaalikoneeseesi)._
 

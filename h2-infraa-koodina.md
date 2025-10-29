@@ -51,7 +51,7 @@ Kohdat
 - YAML simple structure
 - Lists and dictionaries - YAML block structures
 
-YAML Salt -konfiguraatiotiedostomuoto
+__YAML Salt -konfiguraatiotiedostomuoto__
 
 YAML (YAML Ain’t Markup Language) on merkintäkieli, jossa keskiössä ovat data-rakenteet (sanakirjat ja listat). Salt käyttää oletuksena YAML-rendreröintiä, joka muuntaa YAML-rakenteet Python-rakenteiksi.
 
@@ -119,7 +119,7 @@ Kohdat
 - Introduction
 - A basic example
 
-Top-tiedosto (top.sls)
+__Top-tiedosto (top.sls)__
 
 Top-tiedosto määrittää, mitä Saltin tiloja (state) sovelletaan mihin koneisiin.
 

@@ -162,8 +162,11 @@ Loin [Karvisen ohjeilla](https://terokarvinen.com/2024/hello-salt-infra-as-code/
 Vaihtohtoinen syntaksi:
 
 testi [ID]:
+
   file.managed [tila]:
+  
     - name: /tmp/hellonlholm [ajettava komento]
+    
     - contents: ”Hei maailma!” [sisältö]
 
 Tilan nimi voidaan siis sijoittaa ID:n paikalle, mutta se ei aina ole selkein tapa.
@@ -213,28 +216,35 @@ Loin yleisimmille tilafunktioille omat moduulit /srv/salt/-hakemistoon, ja kirjo
 hellopkg
 
 micro:
+
   pkg.installed
 
 hellofile
 
 /tmp/testfile1:
+
     file.managed
 
 helloservice
 
 apache2:
+
   service.running
 
 helllouser
 
 testuser1:
+
   user.present
 
 hellocmd
 
 touch_tmp_test:
+
   cmd.run:
+  
     - name: touch /tmp/test2
+    
     - creates: /tmp/testfile2
 
 Luotavan tiedoston nimi tarvitaan nimi-kohtaan.
@@ -278,16 +288,23 @@ _Tee sls-tiedosto, joka käyttää vähintään kahta eri tilafunktiota näistä
 Loin kansioon /srv/salt/ moduulin several_states ja sinne init.sls-tiedoston. Tiedoston sisältö:
 
 pacakges_ufw_installed:
+
   pkg.installed
+  
     - name: ufw
 
 users_testuser3:
+
   user.present:
+  
     - name: testuser3
 
 files_testfile3:
+
   file.managed:
+  
     - name: /tmp/testfile3
+    
     - contents: “This is test file 3.”
 
 Koin, että ID:eiden erottaminen nimistä oli itselleni havainnollisempi tapa hallita tiloja.

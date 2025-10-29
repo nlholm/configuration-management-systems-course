@@ -161,13 +161,12 @@ Loin [Karvisen ohjeilla](https://terokarvinen.com/2024/hello-salt-infra-as-code/
 
 Vaihtohtoinen syntaksi:
 
+```
 testi [ID]:
-
-  file.managed [tila]:
-  
-    - name: /tmp/hellonlholm [ajettava komento]
-    
+  file.managed [tila]:  
+    - name: /tmp/hellonlholm [ajettava komento]    
     - contents: ”Hei maailma!” [sisältö]
+```
 
 Tilan nimi voidaan siis sijoittaa ID:n paikalle, mutta se ei aina ole selkein tapa.
 
@@ -183,9 +182,11 @@ _Tee top-file, niin että kaikki omat tilasi ajetaan kerralla komennolla 'sudo s
 
 Loin /srv/salt/-kansion juureen top filen nimeltä top.sls. Tiedoston sisältö:
 
+``
 base:
   ’*’:
     - several_states
+```
 
 Vaihtoehtoinen tapa olisi vain listata moduuleita tasolla 3 (esim. hello, hellopkg…).
 
@@ -239,13 +240,12 @@ testuser1:
 
 hellocmd
 
+```
 touch_tmp_test:
-
-  cmd.run:
-  
-    - name: touch /tmp/test2
-    
+  cmd.run:  
+    - name: touch /tmp/test2    
     - creates: /tmp/testfile2
+```
 
 Luotavan tiedoston nimi tarvitaan nimi-kohtaan.
 
@@ -289,23 +289,24 @@ Loin kansioon /srv/salt/ moduulin several_states ja sinne init.sls-tiedoston. Ti
 
 pacakges_ufw_installed:
 
-  pkg.installed
-  
+``
+pkg.installed  
     - name: ufw
+```
 
 users_testuser3:
-
-  user.present:
-  
+```
+user.present:  
     - name: testuser3
+```
 
 files_testfile3:
 
-  file.managed:
-  
-    - name: /tmp/testfile3
-    
+```
+file.managed:  
+    - name: /tmp/testfile3    
     - contents: “This is test file 3.”
+```
 
 Koin, että ID:eiden erottaminen nimistä oli itselleni havainnollisempi tapa hallita tiloja.
 

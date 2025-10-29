@@ -26,7 +26,9 @@ Käytössäni on Windows 11 Home -käyttöjärjestelmällä varustettu jokusen v
 
 ## x) Lue ja tiivistä
 
-__Karvinen 2014: Hello Salt Infra-as-Code__
+### Karvinen 2014: Hello Salt Infra-as-Code
+
+https://terokarvinen.com/2024/hello-salt-infra-as-code/
 
 Karvinen ohjeistaa luomaan yksinkertaisen ”Hello World” -tyyppiseen moduulin Saltilla seuraavasti: 
 - Asenna Salt.
@@ -40,7 +42,14 @@ Karvinen ohjeistaa luomaan yksinkertaisen ”Hello World” -tyyppiseen moduulin
 - Aja moduulissa ja sen init.sls-tiedostossa määritetty tila: `sudo salt-call --local state.apply hello`.
 - Tarkkaile idempotenssia. Jos ajat ym. tilan uudelleen, muutoksia pitäisi tulla 0, koska tiedosto on jo luotu; tila on idempotentti.
  
-__Salt contributors: Salt overview,__ kohdat Rules of YAML, YAML simple structure, Lists and dictionaries - YAML block structures
+### Salt contributors: Salt overview
+
+https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml
+
+Kohdat 
+- Rules of YAML
+- YAML simple structure
+- Lists and dictionaries - YAML block structures
 
 YAML Salt -konfiguraatiotiedostomuoto
 
@@ -99,7 +108,13 @@ YAML-kieli kirjoitetaan lohkorakenteella.
 - Rakenne määräytyy sisennyksen perusteella – käytä välilyöntejä (yleensä 2).
 - Listan jokainen alkio alkaa: - (välilyönti)
 
-__Salt contributors: The top file,__ kohdat Introduction, A basic example
+### Salt contributors: The top file
+
+https://docs.saltproject.io/en/latest/ref/states/top.html
+
+Kohdat 
+- Introduction
+- A basic example
 
 Top-tiedosto (top.sls)
 

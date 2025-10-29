@@ -129,7 +129,7 @@ Saltissa top-tiedosto muodostaa kartoituksen:
 -  mille koneille sovelletaan
 -  mitä konfiguraatiorooleja (SLS-tiloja)
 
-Top-tiedoston nimi on oletuksena top.sls, ja se sijaitsee tila¬tiedostojen hakemistorakenteen (state tree) juurella.
+Top-tiedoston nimi on oletuksena top.sls, ja se sijaitsee tila-tiedostojen hakemistorakenteen (state tree) juurella.
 
 Top-tiedostot koostuvat kolmesta osasta: 
 - ympäristö (environment): hakemisto, jossa sijaitsevat tilatiedostot (yleensä ’base’)

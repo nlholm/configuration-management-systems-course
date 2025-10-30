@@ -261,7 +261,7 @@ Tekoäly loi myös havainnollisen muistilistan tiloista:
 - name tasolla 3 kertoo ajettavan komennon (jos sitä ei ole annettu ID:n yhteydessä)
 - asetukset tasolla 3
 
-Päivitys 30.10.2025 10:15: Toisten kurssilaisten (esim. [Alex Lindhin](https://github.com/AlexLindh/Configuration-management/blob/main/h2-infraa-koodina.md) raportteja lukiessani opin, että lyhyin tapa suorittaa cmd-tila olisi aivan vastaava kuin muidenkin tilojen:
+Päivitys 30.10.2025 10:15: Toisten kurssilaisten (esim. [Alex Lindhin](https://github.com/AlexLindh/Configuration-management/blob/main/h2-infraa-koodina.md) ) raportteja lukiessani opin, että lyhyin tapa suorittaa cmd-tila olisi aivan vastaava kuin muidenkin tilojen:
 
 ```
 touch /tmp/testfile2:

@@ -121,7 +121,7 @@ Kohdat
 
 __Top-tiedosto (top.sls)__
 
-Top-tiedosto määrittää, mitä Saltin tiloja (state) sovelletaan mihin koneisiin.
+Top-tiedosto määrittää, mitä Saltin tiloja (state) sovelletaan mihinkin koneisiin.
 
 Suurin osa ympäristöistä koostuu konejoukoista, joilla on samankaltaiset roolit. Esim. joukko verkkopalvelimia saattaa vaatia Apache-paketin ja palvelun käynnissäolon.
 

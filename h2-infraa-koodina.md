@@ -349,7 +349,7 @@ Samoin kuin tetsfile3.
 
 <img width="605" height="298" alt="image" src="https://github.com/user-attachments/assets/01c7065d-3440-4654-9750-2ce0d0e33787" />
 
-Kun ajoin tilan `sudo salt-call --local state.apply hellouser` uudemman kerran, muutoksia ei ilmennyt: käyttäjä on jo luotu ja tila on idempotentti.
+Kun ajoin tilan `sudo salt-call --local state.apply hellouser` uudemman kerran, muutoksia ei ilmennyt: käyttäjä oli jo luotu ja tila oli idempotentti.
 
 ## Lähteet
 

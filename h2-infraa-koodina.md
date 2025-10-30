@@ -261,6 +261,13 @@ Tekoäly loi myös havainnollisen muistilistan tiloista:
 - name tasolla 3 kertoo ajettavan komennon (jos sitä ei ole annettu ID:n yhteydessä)
 - asetukset tasolla 3
 
+Päivitys 30.10.2025 10:15: Toisten kurssilaisten (esim. [Alex Lindhin](https://github.com/AlexLindh/Configuration-management/blob/main/h2-infraa-koodina.md) raportteja lukiessani opin, että lyhyin tapa suorittaa cmd-tila olisi aivan vastaava kuin muidenkin tilojen:
+
+```
+touch /tmp/testfile2:
+  cmd.run  
+```
+
 <img width="550" height="162" alt="image" src="https://github.com/user-attachments/assets/5b248ead-818a-47f4-b913-c1bfd25f873c" />
  
 <img width="625" height="460" alt="image" src="https://github.com/user-attachments/assets/ee31101f-7e10-406d-84b8-a99566c6a4d1" />
@@ -351,6 +358,8 @@ Kun ajoin tilan `sudo salt-call --local state.apply hellouser` uudemman kerran, 
 
 ## Lähteet
 
+Lindh, A. 2025. H2 Infraa koodina. https://github.com/AlexLindh/Configuration-management/blob/main/h2-infraa-koodina.md
+
 Karvinen, T. 2014. Hello Salt Infra-as-Code. https://terokarvinen.com/2024/hello-salt-infra-as-code/
 
 Karvinen, T. 2025. Palvelinten Hallinta. https://terokarvinen.com/palvelinten-hallinta/
@@ -358,3 +367,7 @@ Karvinen, T. 2025. Palvelinten Hallinta. https://terokarvinen.com/palvelinten-ha
 Salt Project. s.a. Salt overview. https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml
 
 Salt Project. 2025. The Top File. https://docs.saltproject.io/en/latest/ref/states/top.html 
+
+## Päivitykset
+
+30.10.2025 10:15: Lisäsin huomion yksinkertaisemmasta tavasta luoda cmd-tila.

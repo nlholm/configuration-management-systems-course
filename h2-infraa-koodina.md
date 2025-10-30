@@ -34,7 +34,7 @@ Karvinen ohjeistaa luomaan yksinkertaisen ”Hello World” -tyyppiseen moduulin
 - Asenna Salt.
 - Luo kansio moduulille master-koneen /srv/salt-kansioon. Master jakaa ohjeet orjille tästä kansiosta. Esim. ’hello’.
 - Luo init.sls-tiedosto moduulikansioon. `sudoedit init.sls`.
-- Luo init.sls-tiedostoon sisältöä YAML-kielellä. Esimerkiksi am. koodi luo /tmp/-kansioon hello-infra-nimisen tyhjän tiedoston käyttämällä tilafunktiota file.managed.
+- Luo init.sls-tiedostoon sisältöä YAML-kielellä. Esimerkiksi am. koodi luo /tmp/-kansioon 'hello-infra'-nimisen tyhjän tiedoston käyttämällä tilafunktiota file.managed.
 ```
 /tmp/hello-infra:
   file.managed

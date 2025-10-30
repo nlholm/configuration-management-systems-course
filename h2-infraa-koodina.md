@@ -261,6 +261,8 @@ Avuksi tuli muistilista tiloista:
 - name tasolla 3 kertoo ajettavan komennon (jos sitä ei ole annettu ID:n yhteydessä)
 - asetukset tasolla 3
 
+Kyselin cmd-tilafunktiosta hieman lisää tekoälyltä (ChatGPT 5). Tekoäly kertoi, että 'creates'-ehto toimii tässä vapaaehtoisena lisäsuojana, joka estää komennon suorittamisen, jos tiedosto jo on olemassa. Itse komento ('touch') luo tiedoston, tai muuttaa sen aikaleiman jos jos tiedosto on jo olemassa ja komento ajetaan uudestaan.
+
 <img width="550" height="162" alt="image" src="https://github.com/user-attachments/assets/5b248ead-818a-47f4-b913-c1bfd25f873c" />
  
 <img width="625" height="460" alt="image" src="https://github.com/user-attachments/assets/ee31101f-7e10-406d-84b8-a99566c6a4d1" />

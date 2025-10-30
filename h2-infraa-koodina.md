@@ -253,9 +253,7 @@ touch_tmp_test:
 
 Luotavan tiedoston nimi tarvitaan nimi-kohtaan.
 
-Cmd-tilan luominen oli hieman haasteellisempaa kuin muiden. 
-
-Kyselin cmd-tilafunktiosta hieman lisää tekoälyltä (ChatGPT 5). Tekoäly kertoi, että 'creates'-ehto toimii tässä vapaaehtoisena lisäsuojana, joka estää komennon suorittamisen, jos tiedosto jo on olemassa. Itse komento ('touch') luo tiedoston, tai muuttaa sen aikaleiman jos jos tiedosto on jo olemassa ja komento ajetaan uudestaan.
+Cmd-tilan luominen oli hieman haasteellisempaa kuin muiden, joten kyselin cmd-tilafunktiosta lisätietoja tekoälyltä (ChatGPT 5). Tekoäly kertoi, että 'creates'-ehto toimii tässä vapaaehtoisena lisäsuojana, joka estää komennon suorittamisen, jos tiedosto jo on olemassa. Itse komento ('touch') luo tiedoston, tai muuttaa sen aikaleiman jos jos tiedosto on jo olemassa ja komento ajetaan uudestaan.
 
 Tekoäly loi myös havainnollisen muistilistan tiloista:
 - tilan ID määritetään tasolla 1 (voi olla samalla name)

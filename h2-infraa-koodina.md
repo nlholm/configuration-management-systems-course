@@ -358,11 +358,11 @@ Kun ajoin tilan `sudo salt-call --local state.apply hellouser` uudemman kerran, 
 
 ## Lähteet
 
-Lindh, A. 2025. H2 Infraa koodina. https://github.com/AlexLindh/Configuration-management/blob/main/h2-infraa-koodina.md
-
 Karvinen, T. 2014. Hello Salt Infra-as-Code. https://terokarvinen.com/2024/hello-salt-infra-as-code/
 
 Karvinen, T. 2025. Palvelinten Hallinta. https://terokarvinen.com/palvelinten-hallinta/
+
+Lindh, A. 2025. H2 Infraa koodina. https://github.com/AlexLindh/Configuration-management/blob/main/h2-infraa-koodina.md
 
 Salt Project. s.a. Salt overview. https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml
 

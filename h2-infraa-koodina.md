@@ -60,7 +60,7 @@ Perussäännöt
 - Avain ja arvo erotetaan ”: ” (kaksoispiste + välilyönti).
 - Avainten arvot voivat olla eri rakenteita.
 - Avaimet ovat kirjainkokoherkkiä.
-- Vain välilyönnit on sallittu, tabulaattori ei.
+- Vain välilyönnit ovat sallittuja, tabulaattori ei.
 - Kommentit alkavat #.
 
 Perusrakenteet

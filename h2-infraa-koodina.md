@@ -255,13 +255,13 @@ Luotavan tiedoston nimi tarvitaan nimi-kohtaan.
 
 Cmd-tilan luominen oli hieman haasteellisempaa kuin muiden. 
 
-Avuksi tuli muistilista tiloista:
+Kyselin cmd-tilafunktiosta hieman lisää tekoälyltä (ChatGPT 5). Tekoäly kertoi, että 'creates'-ehto toimii tässä vapaaehtoisena lisäsuojana, joka estää komennon suorittamisen, jos tiedosto jo on olemassa. Itse komento ('touch') luo tiedoston, tai muuttaa sen aikaleiman jos jos tiedosto on jo olemassa ja komento ajetaan uudestaan.
+
+Tekoäly loi myös havainnollisen muistilistan tiloista:
 - tilan ID määritetään tasolla 1 (voi olla samalla name)
 - tila (esim. cmd.run) tasolla 2
 - name tasolla 3 kertoo ajettavan komennon (jos sitä ei ole annettu ID:n yhteydessä)
 - asetukset tasolla 3
-
-Kyselin cmd-tilafunktiosta hieman lisää tekoälyltä (ChatGPT 5). Tekoäly kertoi, että 'creates'-ehto toimii tässä vapaaehtoisena lisäsuojana, joka estää komennon suorittamisen, jos tiedosto jo on olemassa. Itse komento ('touch') luo tiedoston, tai muuttaa sen aikaleiman jos jos tiedosto on jo olemassa ja komento ajetaan uudestaan.
 
 <img width="550" height="162" alt="image" src="https://github.com/user-attachments/assets/5b248ead-818a-47f4-b913-c1bfd25f873c" />
  

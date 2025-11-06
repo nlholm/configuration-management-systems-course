@@ -1,4 +1,4 @@
-# Verkon yli
+# h3 Soitto kotiin
 
 [Palvelinten hallinta 2025 loppusyksy](https://terokarvinen.com/palvelinten-hallinta/) -kurssin kolmannessa tehtävässä opettelin käyttämään Saltia verkon yli samaan yksityiseen virtuaaliverkkoon asennettujen master- ja slave-koneiden välillä. Tein uudet koneet Vagrant-työkalulla.
 

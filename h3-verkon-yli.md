@@ -98,9 +98,9 @@ Top-file kirjoitetaan masterin /srv/salt-kansion juureen. Siinä voidaan määri
 
 _Osoita jollain komennolla, että Vagrant on asennettu (esim tulostaa Vagrantin versionumeron). Jos et ole vielä asentanut niitä, raportoi myös Vagrant ja VirtualBox asennukset._
 
-Aloitin asennustyöt klo 18.00. 
+Aloitin asennustyöt keskiviikkona klo 18.00. 
 
-Host-koneeni on Windows 11, eikä siinä ollut asennettuna Vagrantia. Aloitin asennuksen syventymällä Vagrantin asennusohjeisiin ([lyhyt versio]( https://developer.hashicorp.com/vagrant/tutorials/get-started), [pitkä versio]( https://developer.hashicorp.com/vagrant/docs/installation). Latasin asennuspaketin Windwosille, asensin sen ja käynnistin koneeni uudelleen. 
+Host-koneeni on Windows 11, eikä siinä ollut asennettuna Vagrantia. Aloitin asennuksen syventymällä Vagrantin asennusohjeisiin ([lyhyt versio]( https://developer.hashicorp.com/vagrant/tutorials/get-started), [pitkä versio]( https://developer.hashicorp.com/vagrant/docs/installation). Latasin asennuspaketin Windowsille, asensin sen ja käynnistin koneeni uudelleen. 
 
 <img width="548" height="221" alt="image" src="https://github.com/user-attachments/assets/580abf13-b596-46cd-8dc8-16d7f742b547" />
  
@@ -108,7 +108,7 @@ Host-koneeni on Windows 11, eikä siinä ollut asennettuna Vagrantia. Aloitin as
 
 <img width="753" height="829" alt="image" src="https://github.com/user-attachments/assets/c2f87d65-f8e4-4e70-a2d0-3b9afac21379" />
  
-Tarkistin että Vagrant tuli lisättyä Windowsin ympäristömuuttujiin (ilmeisesti melko yleinen ongelma, josta keskustelua Stack Overflown [artikkelissa(https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows?newreg=446f3b22164548faa40ac0a7898e3575)).
+Tarkistin että Vagrant tuli lisättyä Windowsin ympäristömuuttujiin (ilmeisesti melko yleinen ongelma, josta keskustelua Stack Overflown [artikkelissa](https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows?newreg=446f3b22164548faa40ac0a7898e3575)).
 
 <img width="1039" height="284" alt="image" src="https://github.com/user-attachments/assets/28f39e10-24a0-4c5d-858c-ece8b42897b4" />
 
@@ -172,7 +172,7 @@ _Tee kahden Linux-tietokoneen verkko Vagrantilla. Osoita, että koneet voivat pi
 
 _Demonstroi Salt herra-orja arkkitehtuurin toimintaa kahden Linux-koneen verkossa, jonka teit Vagrantilla. Asenna toiselle koneelle salt-master, toiselle salt-minion. Laita orjan /etc/salt/minion -tiedostoon masterin osoite. Hyväksy avain ja osoita, että herra voi komentaa orjakonetta._
 
-Yhdistin kotitehtävän osiot c) ja d). Aloitin luomalla uuden projektikansion ’multiplehosts’ ja navigoimalla sinne PowerShellissä. C:\Users\niina\vagrant_vm_c\multiplehost
+Yhdistin kotitehtävän osiot c) ja d). Aloitin luomalla uuden projektikansion ’multiplehosts’ ja navigoimalla sinne PowerShellissä.
 
 <img width="898" height="91" alt="image" src="https://github.com/user-attachments/assets/467dd8df-4839-417a-b238-c8e4400b6c5b" />
 
@@ -234,7 +234,7 @@ Minion1:sen pingaus kuitenkin onnistui masterilta, mikä oli varsinainen tehtäv
 
 <img width="778" height="285" alt="image" src="https://github.com/user-attachments/assets/d5adeb68-b83c-4392-91ee-9cdcc316854a" />
 
-Kirjauduin ulos masterilta (´exit´) ja sisään minion1:selle. Pingaus onnistui myös toisin päin.
+Kirjauduin ulos masterilta ja sisään minion1:selle. Pingaus onnistui myös toisin päin.
 
 <img width="766" height="240" alt="image" src="https://github.com/user-attachments/assets/0e83c7eb-3735-44c4-b395-bf950aa42bc4" />
  
@@ -272,7 +272,7 @@ Lopuksi halusin testata, onnistunko muokkaamaan Karvisen [ohjetta]( https://tero
 
 Orjien Salt-demoneja tosin piti jälleen käydä potkaisemassa omin jaloin. Tässä yhteydessä kävi ilmi, että Salt ei ollut asentunut minion2:selle, vaikka minon1:selle se asentui ilman ongelmia. Tekoäly kertoi, että kyse saattoi olla yleisestä Vagrantin virheestä monikoneympäristössä (APT-lukitusongelma). Ratkaisu on asentaa koneet peräkkäin: `vagrant up --no-parallel`.
 
-Kokeilin provisioida minion2:sen uudestaan:`vagrant provision minion2`, `vagrant relaod minion2`. Ei onnistunut, joten ´vagrant destroy minion2`, `vagrant up minon2`eli luonti alusta.
+Kokeilin provisioida minion2:sen uudestaan:`vagrant provision minion2`, `vagrant reload minion2`. Ei onnistunut, joten `vagrant destroy minion2`, `vagrant up minion2`eli luonti alusta.
 
 <img width="715" height="491" alt="image" src="https://github.com/user-attachments/assets/474041fc-5e1f-44ba-a2cc-8d1c7c2aeedb" />
 

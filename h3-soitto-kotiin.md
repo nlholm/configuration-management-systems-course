@@ -306,7 +306,7 @@ Micro tuli asennettua minion1:seen pkg-installed-tilan kautta moduulista (state.
 
 File.managed-tila tuli testattua jo aiemmin (silloin käytössä state.single).
 
-Tehtävän loppupuolella avaimet alkoivat taas temppuilla ja yhteys katkeili. Epäilin Linuxin työmuistiongelmia ja testien myötä kasautunutta tauhkaa. Kaikki tehtävän osat oli lopulta suoritettu, joten totesin, että nyt saattaisi olla hyvä hetki tuhota testikoneet. `vagrant destroy -f`.
+Tehtävän loppupuolella avaimet alkoivat taas temppuilla ja yhteys katkeili. Epäilin Linuxin työmuistiongelmia ja testien myötä kasautunutta tauhkaa. Kaikki tehtävän osat oli lopulta suoritettu, joten totesin, että nyt saattaisi olla hyvä hetki tuhota testikoneet. `vagrant destroy -f`. Sain tehtävän valmiiksi torstaina 6.11.2025 klo 17:30.
 
 ## Lähteet
 

@@ -314,7 +314,7 @@ HashiCorp. s.a. Discover Vagrant Boxes. https://portal.cloud.hashicorp.com/vagra
 
 HashiCorp. s.a. Get Started. https://developer.hashicorp.com/vagrant/tutorials/get-started 
 
-HashiCorp. s.a. Get Started. HashiCorp. s.a. Installation. https://developer.hashicorp.com/vagrant/docs/installation 
+HashiCorp. s.a. Installation. https://developer.hashicorp.com/vagrant/docs/installation 
 
 HashiCorp. s.a. Vagrant. https://developer.hashicorp.com/vagrant
 

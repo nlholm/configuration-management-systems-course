@@ -60,7 +60,7 @@ Luo Vagrantfile projektikansioon ja täytä se Karvisen templatella:
 `$ mkdir twohost/; cd twohost/`
 `$ nano Vagrantfile`
 
-(Oma huomio: Windows-koneelle luodaan kansio projektille, avataan PowerShell tai CommandPrompt pääkäyttäjän oikeuksin ja navigoidaan projektin kansioon. Siellä `vagrant init debian/bookworm64`(viimeisen osion voi korvata toisella [iso-kuvalla]( https://portal.cloud.hashicorp.com/vagrant/discover), mikä luo Vagrant-kansion ja alustaa koneen. Vagrantfilea voi myös muokata esim. Notepadilla tai VSCodella, vaikka käyttäen Karvisen templateja.)
+(Oma huomio: Windows-koneelle luodaan kansio projektille, avataan PowerShell tai CommandPrompt pääkäyttäjän oikeuksin ja navigoidaan projektin kansioon. Siellä `vagrant init debian/bookworm64`(viimeisen osion voi korvata toisella [iso-kuvalla]( https://portal.cloud.hashicorp.com/vagrant/discover)), mikä luo Vagrant-tiedoston ja alustaa koneen. Vagrantfilea voi myös muokata esim. Notepadilla tai VSCodella, vaikka käyttäen Karvisen templateja.)
 
 Käynnistä uusi kone:
 `vagrant up`
@@ -240,7 +240,7 @@ Kirjauduin ulos masterilta ja sisään minion1:selle. Pingaus onnistui myös toi
  
 <img width="1039" height="370" alt="image" src="https://github.com/user-attachments/assets/db09805a-8ced-4c51-9b94-c482609c04b0" />
 
-Salt-paketin asennustiedostosto olivat nyt kohdillaan.
+Salt-paketin asennustiedostosto oli nyt kohdillaan.
 
 <img width="928" height="159" alt="image" src="https://github.com/user-attachments/assets/d5ea2922-91b6-4690-a27c-f19fbbe9cf8f" />
 

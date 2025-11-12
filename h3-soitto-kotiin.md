@@ -284,6 +284,35 @@ Sain hyväksyttyä avaimet, mutta testailuvaiheessa jompikumpi koneista oli Salt
 
 Kolmen koneen Vagrant-projektin Vagrantfile näytti tältä (muokattu Karvisen mallista).
 
+Päivitys 12.11.2025. Halusin luoda vielä verkon, jossa jatkuvat työmuistiongelmat eivät vaivaisi koneita. Loin kansion multiplehosts_v3 ja sinne kolmen koneen Vagranfilen, jossa kunkin koneen RAMia kasvatettiin (master sai 2 GB ja minionit 1 GB kukin). Kyselin myös tekoälyltä parhaita käytäntöjä Vagranfilen, shell scriptin ja Saltin yhteistoimintaan, ja saamieni ohjeiden mukaan eriytin skriptit omiin tiedostoihinsa samassa kansiossa.
+
+<img width="925" height="410" alt="image" src="https://github.com/user-attachments/assets/905bb204-f3c4-407f-b442-740aae2eea68" />
+ 
+<img width="913" height="473" alt="image" src="https://github.com/user-attachments/assets/9786468e-72d5-4120-aa1e-1d39d319442e" />
+
+Skriptit:
+
+<img width="1039" height="578" alt="image" src="https://github.com/user-attachments/assets/847ec692-487f-462f-9c44-bc0b6dfd902b" />
+ 
+<img width="1039" height="793" alt="image" src="https://github.com/user-attachments/assets/cd4b1ab2-9e6b-41ce-a4f3-00717b9c7d04" />
+
+```
+sudo systemctl restart salt-minion
+sudo systemctl stop salt-minion
+sudo systemctl start salt-minion
+```
+
+Kahden jälkimmäisen käskyn tarkoitus oli automatisoida bugin käsittely.
+
+Vagrantfile:
+
+<img width="709" height="1283" alt="image" src="https://github.com/user-attachments/assets/2878f8e2-c05e-4dfe-b385-541b37451b39" />
+ 
+<img width="808" height="625" alt="image" src="https://github.com/user-attachments/assets/866f6dbf-6f89-4ec6-9a01-22b664fcc0d7" />
+
+Minion-koneiden Salt-demonit piti jälleen käydä potkaisemassa käyntiin omin jaloin, automatisointi ei siis valitettavasti onnistunut. Muilta osin kaikki koneet toimivat nyt jouhevammin, kun muistia oli lisää.
+
+
 ## e) Tilat verkon yli
 
 _Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)._
@@ -329,4 +358,7 @@ Karvinen, T. 2021. Two Machine Virtual Network With Debian 11 Bullseye and Vagra
 StackOverflow. s.a. Where can I set path to make.exe on Windows? https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows?newreg=446f3b22164548faa40ac0a7898e3575 
 
 Yager, R. 2023. How to Run Vagrant on Windows. https://overgrowncarrot1.medium.com/how-to-run-vagrant-on-windows-1f85392f96d3 
- 
+
+## Päivitykset
+
+12.11.2025: Loin Vagrantfilen, jonka koneet saavat lisää RAM-muistia sekä hakevat skriptin ulkoisesta tiedostosta. Ks. osio c)-d).

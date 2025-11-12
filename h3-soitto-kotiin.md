@@ -317,7 +317,7 @@ Minion-koneiden Salt-demonit piti jälleen käydä potkaisemassa käyntiin omin 
 
 _Kokeile vähintään kahta tilaa verkon yli (viisikosta: pkg, file, service, user, cmd)._
 
-Käytettyäni tuntikausia aikaa erinäisiin harhapolkuihin ja testailuihin, päätin suorittaa loppuosan viikon kotitehtävästä suoraviivaisesti.
+Käytettyäni tuntikausia aikaa erinäisiin harhapolkuihin ja testailuihin, päätin suorittaa loppuosan viikon kotitehtävästä suoraviivaisesti aiemmin luodussa kahden koneen verkossa.
 
 Loin masterin /srv/salt-kansioon moduulin ’favpackages’ ja sen init.sls-tiedostoon tilan, joka asentaa micron kaikille koneille. 
 

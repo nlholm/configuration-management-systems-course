@@ -306,7 +306,7 @@ Kahden jälkimmäisen käskyn tarkoitus oli automatisoida bugin käsittely.
 
 Vagrantfile:
 
-<img width="709" height="1283" alt="image" src="https://github.com/user-attachments/assets/2878f8e2-c05e-4dfe-b385-541b37451b39" />
+<img width="578" height="1018" alt="image" src="https://github.com/user-attachments/assets/34b18158-c9d5-4830-9476-29977b9f59da" />
  
 <img width="808" height="625" alt="image" src="https://github.com/user-attachments/assets/866f6dbf-6f89-4ec6-9a01-22b664fcc0d7" />
 
@@ -361,4 +361,4 @@ Yager, R. 2023. How to Run Vagrant on Windows. https://overgrowncarrot1.medium.c
 
 ## Päivitykset
 
-12.11.2025: Loin Vagrantfilen, jonka koneet saavat lisää RAM-muistia sekä hakevat skriptin ulkoisesta tiedostosta. Ks. osio c)-d).
+12.11.2025: Loin Vagrantfilen, jonka koneet saivat lisää RAM-muistia sekä hakivat shell skriptinsä ulkoisesta tiedostosta. Ks. osio c)-d).

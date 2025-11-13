@@ -156,7 +156,7 @@ Seuraavaksi kokeilin ajaa tilan minion-koneisiin. `sudo salt-call ‘*’ state.
  
 <img width="1039" height="361" alt="image" src="https://github.com/user-attachments/assets/8e3405fd-a672-4801-ab37-2ded6e1f9e41" />
 
-Weppisivu tuli asetettua vastaamaan localhostista myös minioneissa. Hyvillä ohjeilla pääsee pitkälle!
+Weppisivu tuli asetettua vastaamaan localhostista myös minioneissa. Hyvillä ohjeilla pääsee pitkälle, vaikka tämä ei ehkä hienostunein ratkaisu ollutkaan.
 
 ## Lähteet
 

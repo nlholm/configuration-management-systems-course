@@ -50,7 +50,7 @@ openssh-server:
 ```
 /etc/ssh/sshd_config:
  file.managed:
-   - source: salt://sshd_config
+   - source: salt://sshd/sshd_config
 ```
 
 - Seuraa mahdollisia muutoksia muokattuun konffitiedostoon. Jos sellaisia havaitaan, käynnistä demoni uudelleen:

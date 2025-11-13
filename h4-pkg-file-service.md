@@ -30,7 +30,7 @@ Käytössäni on Windows 11 Home -käyttöjärjestelmällä varustettu jokusen v
 
 ## x) Lue ja tiivistä
 
-# Karvinen 2018: [Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port]( https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/)
+### Karvinen 2018: [Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port]( https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/)
 
 Karvisen ohjeessa kerrotaan (hyvinkin tiiviisti), kuinka on mahdollista toteuttaa yksinkertainen pkg-file-service-konffi. Esimerkkinä käytetään SSH-demonin kuuntelevan portin muutosta.
 
@@ -45,7 +45,7 @@ openssh-server:
 
 - Luo kopio* SSHd-konfiguraatiotiedostosta sshd-moduuliin, tee siihen haluttu muutos (esim. lisää kuunteleva portti) ja käytä muokattua tiedostoa minion-koneiden konfiguraatiotiedoston yliajamiseen (näitä vaiheita ei artikkelissa varsinaisesti kerrota):
 
-* `sudo cp etc/ssh/sshd_config srv/salt/sshd/sshd_config`
+\* `sudo cp etc/ssh/sshd_config srv/salt/sshd/sshd_config`
 
 ```
 /etc/ssh/sshd_config:
@@ -62,24 +62,24 @@ sshd:
      - file: /etc/ssh/sshd_config
 ```
 
-Salt-tila ajetaan `sudo salt '*' state.apply sshd`. Se testataan `nc -vz hostname@minion ’uusi portti’ `(jos käytössä Vagrant) tai `nc -vz localhost ’uusi portti’ `ja `ssh -p ’uusi portti’ hostname@localhost` (jos testaus paikallisesti). Ennen testausta kannattaa avata palomuurista uusi portti (`sudo ufw allow ’uusi portti’/tcp`ja `sudo ufw status`) sekä käynnistää SSH uudelleen (`sudo systemctl restart ssh`).
+Salt-tila ajetaan `sudo salt '*' state.apply sshd`. Se testataan `nc -vz hostname@minion ’uusi portti’ ` (jos käytössä Vagrant) tai `nc -vz localhost ’uusi portti’ ` ja `ssh -p ’uusi portti’ hostname@localhost` (jos testaus paikallisesti). Ennen testausta kannattaa avata palomuurista uusi portti (`sudo ufw allow ’uusi portti’/tcp`ja `sudo ufw status`) sekä käynnistää SSH uudelleen (`sudo systemctl restart ssh`).
 
 ## a) SSHouto
 
-_Lisää uusi portti, jossa SSHd kuuntelee.
-- Jos käytät Vagrantia, muista jättää portti 22/tcp auki - se on oma yhteytesi koneeseen. SSHd:n asetustiedostoon voi tehdä yksinkertaisesti kaksi "Port"-riviä, molemmat portit avataan.
-- Löydät oikean asetuksen katsomalla SSH:n asetustiedostoa.
-- Nyt tarvitaan service-watch, jotta demoni käynnistetään uudelleen, jos asetustiedosto muuttuu masterilla
-- Ensin käsin: muista näyttää, että ensin teit ja testasit muutoksen käsin.
-- Näytä, että tilasi korjaa puutteet. Voit esimerkiksi poistaa paketin tai tehdä virheen tiedostoon käsin, sitten ajaa tilasi._
+_Lisää uusi portti, jossa SSHd kuuntelee._
+- _Jos käytät Vagrantia, muista jättää portti 22/tcp auki - se on oma yhteytesi koneeseen. SSHd:n asetustiedostoon voi tehdä yksinkertaisesti kaksi "Port"-riviä, molemmat portit avataan._
+- _Löydät oikean asetuksen katsomalla SSH:n asetustiedostoa._
+- _Nyt tarvitaan service-watch, jotta demoni käynnistetään uudelleen, jos asetustiedosto muuttuu masterilla._
+- _Ensin käsin: muista näyttää, että ensin teit ja testasit muutoksen käsin._
+- _Näytä, että tilasi korjaa puutteet. Voit esimerkiksi poistaa paketin tai tehdä virheen tiedostoon käsin, sitten ajaa tilasi._
 
 <img width="703" height="570" alt="image" src="https://github.com/user-attachments/assets/0ee4bf06-3c42-481e-9bc1-87dbf2e5b23f" />
 
-Tein tehtävän paikallisesti virtuaali-debianillani. Aloitin tehtävän lisäilemällä avoimia portteja debianin palomuuriin (ml. portin 8888 jonka ajattelin avata SSH-demonille).
+Tein tehtävän paikallisesti virtuaali-debianillani. Aloitin lisäilemällä avoimia portteja debianin palomuuriin (ml. portin 8888 jonka ajattelin avata SSH-demonille).
 
 <img width="1039" height="168" alt="image" src="https://github.com/user-attachments/assets/3d970f3c-3f38-437f-90d7-2ef996b949d4" />
 
-Totesin, että ssh-demonia ei ole asennettu. Asensin demonin ensin käsin: ` sudo apt-get install -y openssh-server`. 
+Totesin, että ssh-demonia ei ole asennettu. Asensin demonin ensin käsin: `sudo apt-get install -y openssh-server`. 
 
 <img width="808" height="101" alt="image" src="https://github.com/user-attachments/assets/713d739f-c8fa-433a-91ec-17d52a5fcae9" />
 
@@ -89,13 +89,13 @@ Demoni kuunteli oletusportissa 22.
 
 Loin masterin /srv/salt-kansioon moduulin sshd ja sinne init.sls-tiedoston. Määritin pkg-, file- ja service-tilat.
 
-SSHd oli jo asennettu, joten navigoin kohdteeseen /etc/ssh ja menin tutkimaan alkuperäistä sshd_config-tiedostoa. Kopioin tiedoston /srv/salt/sshd/-kansioon. ` sudo cp /etc/ssh/sshd_config /srv/salt/sshd/sshd_config`
+SSHd oli jo asennettu, joten navigoin kohdteeseen /etc/ssh ja menin tutkimaan alkuperäistä sshd_config-tiedostoa. Kopioin tiedoston /srv/salt/sshd/-kansioon. `sudo cp /etc/ssh/sshd_config /srv/salt/sshd/sshd_config`
 
 <img width="1039" height="924" alt="image" src="https://github.com/user-attachments/assets/084b4ea6-5712-4b53-a668-c0f7ee286b9b" />
 
 Lisäsin uuden portin kopioituun konffitiedostoon. Käytin samaa kommentointityyliä kuin tiedostossa, vaikka asia hieman epäilytti.
 
-<img width="1039" height="924" alt="image" src="https://github.com/user-attachments/assets/aed054bf-2cbf-4669-a4df-ea40a0678968" />
+<img width="846" height="1140" alt="image" src="https://github.com/user-attachments/assets/59e1c0cb-97d0-466e-a385-47d26a3823b9" />
 
 <img width="463" height="215" alt="image" src="https://github.com/user-attachments/assets/a004d7f1-728f-4d55-8a95-c815cd9c6ad3" />
 
@@ -121,16 +121,16 @@ Nyt SSHd vastasi portista 8888, tehtävä tuli suoritettua.
 
 Tässä vapaaehtoisessa tehtävän b)-kohdassa kokeilin, onnistuisinko automatisoimaan Apachen asennuksen Saltilla niin että Apachen etusivu näyttää weppisvua. Ajan puutteen vuoksi en tehnyt tehtävää ensin käsin. Inspiraationani toimi veitim:in [raportti]( https://github.com/veitim/palvelinten_hallinta/blob/main/h4_pkg_file_service.md). Tein tehtävän kolmen koneen Vagrant-verkossa.
 
-Aloitin tarkistamalla, että Salt saa yhteyden minioneihin. Sen jälkeen loin masterille moduulin namebased (`sudo mkdir -p /srv/salt/namebased`), ja sinne tiedoston init.sls sekä kansion, johon laitoin tiedostot, jotka tulisivat yliajamaanApachen konffitiedoston sekä käyttäjän vagrant index.html-tiedoston. Root-käyttäjä on kaikissa koneissa nimeltään vagrant.
+Aloitin tarkistamalla, että Salt saa yhteyden minioneihin. Sen jälkeen loin masterille moduulin namebased (`sudo mkdir -p /srv/salt/namebased`), ja sinne tiedoston init.sls sekä kansion, johon laitoin tiedostot, jotka tulisivat yliajamaan Apachen konffitiedoston sekä käyttäjän vagrant index.html-tiedoston. Root-käyttäjä on kaikissa koneissa nimeltään vagrant.
 
-<img width="1039" height="247" alt="image" src="https://github.com/user-attachments/assets/447d0f4a-d1f1-42c0-ae75-acf9c6283000" />
+<img width="1039" height="755" alt="image" src="https://github.com/user-attachments/assets/9d431cce-e0be-4882-b1c6-8e7dd3c04d10" />
 
 Init.sls
 
-•	__install&run_apache2__. Asentaa Apachen, käynnistää ja uudelleenkäynnistää kun tiedostoa 000-default.conf muokataan (Apachen oletuksena päällä oleva .conf tiedosto).
-•	__namebased_conf__. Name: tiedosto, jota muokataan. Source: tiedosto, jolla muokataan. Eli korvataan 000-default.conf-tiedoston sisältö.
-•	__create_namebased__. File.directory on keino tehdä hakemistoja. True tekee hakemistot, jos niitä ei ole. User ja Group määrittävät oikeuksia.
-•	__handle_html__. Tekee tiedoston index.html ja korvaa sen sisällön sourcesta tulevalla sisällöllä.
+-	__install&run_apache2__. Asentaa Apachen, käynnistää ja uudelleenkäynnistää kun tiedostoa 000-default.conf muokataan (Apachen oletuksena päällä oleva .conf tiedosto).
+-	__namebased_conf__. Name: tiedosto, jota muokataan. Source: tiedosto, jolla muokataan. Eli korvataan 000-default.conf-tiedoston sisältö.
+-	__create_namebased__. File.directory on keino tehdä hakemistoja. True tekee hakemistot, jos niitä ei ole. User ja Group määrittävät oikeuksia.
+-	__handle_html__. Tekee tiedoston index.html ja korvaa sen sisällön sourcesta tulevalla sisällöllä.
 
 <img width="1039" height="364" alt="image" src="https://github.com/user-attachments/assets/8bb10945-de46-4cc3-ac02-87f796d0a9b1" />
 
@@ -142,7 +142,7 @@ namebased.conf
 
 <img width="1039" height="210" alt="image" src="https://github.com/user-attachments/assets/e76279fd-cf40-4cd9-868d-fd110a6cc779" />
 
-Sitten kokeilemaan. ´sudo salt-call --local state.apply namebased`
+Sitten kokeilemaan. `sudo salt-call --local state.apply namebased`
 
 <img width="709" height="259" alt="image" src="https://github.com/user-attachments/assets/9b120da3-2b03-4a73-98d4-6d35c3d527cd" />
  
@@ -150,7 +150,7 @@ Sitten kokeilemaan. ´sudo salt-call --local state.apply namebased`
 
 Kas, sehän toimi.
 
-Seuraavaksi kokeilin ajaa tilan minion-koneisiin. ´sudo salt-call ‘*’ state.apply namebased`
+Seuraavaksi kokeilin ajaa tilan minion-koneisiin. `sudo salt-call ‘*’ state.apply namebased`
 
 <img width="594" height="220" alt="image" src="https://github.com/user-attachments/assets/823e4c7b-1dfd-43d5-b44b-ec9298c6ffae" />
  

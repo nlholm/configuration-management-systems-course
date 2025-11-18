@@ -34,7 +34,7 @@ Käytössäni on Windows 11 Home -käyttöjärjestelmällä varustettu jokusen v
 
 Karvisen ohjeessa kerrotaan (hyvinkin tiiviisti), kuinka on mahdollista toteuttaa yksinkertainen pkg-file-service-konffi. Esimerkkinä käytetään SSH-demonin kuuntelevan portin muutosta.
 
-Konffi toteutetaan Salti-masterin sshd-moduulin init.sls-tiedostossa:
+Konffi toteutetaan Salt-masterin sshd-moduulin init.sls-tiedostossa:
 
 - Asenna SSH-palvelin:
   

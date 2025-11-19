@@ -90,7 +90,7 @@ Tein muutoksen README-tiedostoon.
 
 <img width="665" height="297" alt="image" src="https://github.com/user-attachments/assets/38a60700-c8d5-4eda-be19-f98a4273d8cb" />
 
-Muutos näkyi GitHubissa. Korjasin otsikon jälkikäteen (markup language; puuttuva välilyönti risuaidan ja otsikon välissä).
+Muutos näkyi GitHubissa. Korjasin otsikon jälkikäteen (markup; puuttuva välilyönti risuaidan ja otsikon välissä).
 
 ## c) Doh! 
 

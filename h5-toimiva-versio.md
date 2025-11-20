@@ -116,7 +116,7 @@ _Tarkastele ja selitä varastosi lokia. Tarkista, että nimesi ja sähköpostios
 
 <img width="665" height="499" alt="image" src="https://github.com/user-attachments/assets/489a0cb5-f666-45c0-89e7-84ddf393257a" />
 
-Lokissa näkymät kommitit ja niiden ajankohta. Myös linkattu GitHub-tilini näkyy.
+Lokissa näkyvät kommitit ja niiden ajankohta. Myös linkattu GitHub-tilini näkyy.
 
 ## e) Suolattu rakki
 

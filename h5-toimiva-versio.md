@@ -134,7 +134,7 @@ Kloonasin projektin Linuxin code-kansioon ja loin sille alikansion, jonne taas l
 
 Loin helllo-moduuliin Salt-tilan, joka luo tyhjän tiedoston tmp-polkuun.
 
-Sitten tultiin mutkikkaaseen kohtaan. Komennossa ` sudo salt-call --local --file-root <polku> state.apply <tila>` __--file-root__ ottaa polun tilojen juureksi, kuten tekoäly (ChatGPT 5.1) kertoi, kun pyysin sitä selventämään mitä komennossa tapahtuu.  
+Sitten tultiin mutkikkaaseen kohtaan. Komennossa ` sudo salt-call --local --file-root <polku> state.apply <tila>` __--file-root__ ottaa polun tilojen juureksi, kuten tekoäly (ChatGPT 5.1) kertoi, kun pyysin sitä selventämään mitä komennossa tapahtuu. Vs. oletuspolku Salt-tiloille on /srv/salt/.  
 
 <img width="665" height="235" alt="image" src="https://github.com/user-attachments/assets/54aa24f0-c330-46d8-afd6-ad38f2f11185" />
 

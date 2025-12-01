@@ -9,4 +9,4 @@ Projektin repositorio löytyy osoitteesta: :whale: https://github.com/nlholm/doc
 
 Projektin raportin repositorio löytyy osoitteesta: :whale: https://github.com/nlholm/docker-demo-documentation/tree/main
 
-Projektin toteuttamiseen kului minulta reilu 20 tuntia viikolla 48/2025 (24.-30.11.2025).
+Projektin toteuttamiseen kului minulta reilut 20 tuntia viikolla 48/2025 (24.-30.11.2025).

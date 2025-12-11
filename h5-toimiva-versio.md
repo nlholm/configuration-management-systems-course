@@ -170,7 +170,7 @@ Lisäsin parini testi-repon yhteistyökumppaniksi GitHubissa. Kyseessä on henki
 
 <img width="1264" height="746" alt="kuva104" src="https://github.com/user-attachments/assets/cb0f4807-eb17-44da-b4cc-756d907afbf6" />
 
-Parini kloonasi testirepon iteseelleen GitHubista, teki sinne muutoksen (moro.md) ja puski muutoksen onnistuneesti takaisin GitHubiin.
+Parini kloonasi testirepon itselleen GitHubista, teki sinne muutoksen (moro.md) ja puski muutoksen onnistuneesti takaisin GitHubiin.
 
 ## Lähteet
 

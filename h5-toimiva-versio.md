@@ -154,7 +154,7 @@ Pari löytyi jo, [punnalathomas]( https://github.com/punnalathomas).
 
 _Vapaaehtoinen: Se toinen järjestelmä: kokeile Gittiä eri käyttöjärjestelmällä kuin sillä, millä teit muut harjoitukset. Selitä niin, että kyseistä järjestelmää osaamatonkin onnistuu. Mahdollisuuksia on runsaasti: Debian, Fedora, Windows, OSX..._
 
-Suoritan parhaillani Ohjelmointi2-kurssia, jonka tehtävät jaetaan GitHubiin opiskelijan henkilökohtaiselle tilille. Tehtävävarasto kloonataan omalle koneelle, tehtäviä työstetään, ja muutokset pusketaan takaisin GitHubiin. Suoritan kurssia Wundows-koneellani. Gitin osalta käyttö on hyvin samankaltaista kuin Linuxissa.
+Suoritan parhaillani Ohjelmointi2-kurssia, jonka tehtävät jaetaan GitHubiin opiskelijan henkilökohtaiselle tilille. Tehtävävarasto kloonataan omalle koneelle, tehtäviä työstetään, ja muutokset pusketaan takaisin GitHubiin. Suoritan kurssia Windows-koneellani. Gitin osalta käyttö on hyvin samankaltaista kuin Linuxissa.
 
 <img width="665" height="213" alt="image" src="https://github.com/user-attachments/assets/e25c62ba-fa89-42cd-8439-acdc529783ae" />
 
